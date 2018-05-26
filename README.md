@@ -1,6 +1,8 @@
 # Practice
 For my own sanity
 
+https://github.com/anniehedgpeth/chef-certification-study-guides/blob/master/local-cookbook-development/local-cookbook-development-study-guide.md
+
 Commands to upload cookbooks to the github repository
 
 chef generate cookbook example_cookbook
