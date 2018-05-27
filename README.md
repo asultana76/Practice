@@ -27,4 +27,4 @@ keyin username and password when prompted
 
 How to reference metadata information in recipe
 
-Chef::Cookbook::Metadata[:maintainer]
+Chef::Cookbook::Metadata.maintainer
