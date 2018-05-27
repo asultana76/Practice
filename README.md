@@ -29,3 +29,25 @@ How to reference metadata information in recipe
 
 run_context.cookbook_collection[“mycookbook”].metadata.version
 
+Create attributes for content of the html
+
+chef generate attribute default
+
+attribute - Default.rb
+
+default['my_iis']['my_msg'] = "Hello world!"
+
+default['my_iis']['my_auth'] = "Authored by Jane Doe"
+
+
+
+recipe - default.rb
+
+my_msg = node['my_iis']['my_msg']
+
+my_auth = node['my_iis']['my_auth']
+
+
+content my_msg + my_auth
+
+
