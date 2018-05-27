@@ -24,3 +24,7 @@ remote add origin https://github.com/asultana76/cookbookname.git
 push -u origin master
 
 keyin username and password when prompted
+
+How to reference metadata information in recipe
+
+Chef::Cookbook::Metadata[:maintainer]
