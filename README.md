@@ -27,4 +27,16 @@ keyin username and password when prompted
 
 How to reference metadata information in recipe
 
-Chef::Cookbook::Metadata.maintainer
+metadata_file = ARGV.first || 'metadata.rb'
+
+metadata = Chef::Cookbook::Metadata.new
+
+metadata.from_file(metadata_file)
+
+
+puts "#{metadata.name} #{metadata.version}"
+
+
+metadata.dependencies.each do |cookbook, version|
+
+puts "#{cookbook} #{version}"
